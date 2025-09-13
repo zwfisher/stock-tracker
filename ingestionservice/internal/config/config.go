@@ -7,13 +7,8 @@ import (
 	"github.com/goccy/go-yaml"
 )
 
-type Secrets struct {
-	FinnhubToken string `yaml:"finnhub_token"`
-}
-
 type Config struct {
 	Symbols []string `yaml:"symbols"`
-	Secrets Secrets `yaml:"secrets"`
 }
 
 func LoadConfig(path string) *Config {
