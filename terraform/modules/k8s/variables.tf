@@ -7,7 +7,7 @@ variable "cluster_name" {
 variable "region" {
   description = "DigitalOcean region"
   type        = string
-  default     = "us-east-1"
+  default     = "nyc3"
 }
 
 variable "cluster_version" {

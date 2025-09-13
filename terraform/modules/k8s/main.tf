@@ -1,7 +1,7 @@
 resource "digitalocean_vpc" "main" {
   name     = "k8s-vpc"
   region   = var.region
-  ip_range = "10.10.0.0/16"
+  ip_range = "10.0.0.0/16"
 }
 
 resource "digitalocean_kubernetes_cluster" "main" {
