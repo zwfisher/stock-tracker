@@ -1,0 +1,5 @@
+services:
+  ingestionservice:
+    build: ./ingestionservice
+    environment:
+      - FINNHUB_TOKEN=${FINNHUB_TOKEN}
