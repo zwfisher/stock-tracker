@@ -11,6 +11,11 @@ import (
 	"github.com/zwfisher/stock-tracker/ingestionservice/internal/config"
 )
 
+type WebSocketServer struct {
+	baseUrl string
+	msgChan chan any
+}
+
 func Start(config *config.Config) {
 	log.Println("Starting websocket service")
 
